@@ -55,6 +55,12 @@ protected:
 
   /// Gradient of the concentration
   const VariableGradient & _grad_v;
+
+//Abdo from here
+  const bool  _add_stiffness_damping_term;
+  const MaterialProperty<Real> & _zeta;
+  const VariableGradient & _grad_v_dot;
+  const VariableValue & _d_grad_v_dot_dv;
 };
 
 template <typename T>
@@ -78,6 +84,15 @@ MatDiffusionBase<T>::validParams()
                        "Coupled concentration variable for kernel to operate on; if this "
                        "is not specified, the kernel's nonlinear variable will be used as "
                        "usual");
+                         //Abdo from here
+params.addParam<bool>("add_stiffness_damping_term",
+                        false,
+                        "Set to false to not to stiffness damping term to this kernel");
+params.addParam<MaterialPropertyName>("zeta",
+                       0.0,
+                       "Name of material property or a constant real "
+                       "number defining the zeta parameter for the "
+                       "stiffness proportional damping.");                      
   return params;
 }
 
@@ -92,7 +107,13 @@ MatDiffusionBase<T>::MatDiffusionBase(const InputParameters & parameters)
     _is_coupled(isCoupled("v")),
     _v_var(_is_coupled ? coupled("v") : (isCoupled("conc") ? coupled("conc") : _var.number())),
     _grad_v(_is_coupled ? coupledGradient("v")
-                        : (isCoupled("conc") ? coupledGradient("conc") : _grad_u))
+                        : (isCoupled("conc") ? coupledGradient("conc") : _grad_u)),
+   //Abdo from here
+   _add_stiffness_damping_term(getParam<bool>("add_stiffness_damping_term")),  
+   _zeta(getMaterialProperty<Real>("zeta")),
+   _grad_v_dot(coupledGradientDot("v")),
+   _d_grad_v_dot_dv(coupledDotDu("v"))
+   
 {
   // deprecated variable parameter conc
   if (isCoupled("conc"))
@@ -116,7 +137,13 @@ template <typename T>
 Real
 MatDiffusionBase<T>::computeQpResidual()
 {
-  return _D[_qp] * _grad_v[_qp] * _grad_test[_i][_qp];
+  Real residual = 0.0;
+  residual +=_D[_qp] * _grad_v[_qp] * _grad_test[_i][_qp];
+  if (_add_stiffness_damping_term)
+  {
+    residual += _zeta[_qp] * _grad_test[_i][_qp] * _grad_v_dot[_qp];
+  }
+  return residual;
 }
 
 template <typename T>
@@ -124,6 +151,10 @@ Real
 MatDiffusionBase<T>::computeQpJacobian()
 {
   Real sum = _phi[_j][_qp] * _dDdc[_qp] * _grad_v[_qp] * _grad_test[_i][_qp];
+  if (_add_stiffness_damping_term)
+  {
+    sum += _zeta[_qp] * _grad_test[_i][_qp] * _grad_phi[_j][_qp] * _d_grad_v_dot_dv[_qp];
+  }
   if (!_is_coupled)
     sum += computeQpCJacobian();
 
