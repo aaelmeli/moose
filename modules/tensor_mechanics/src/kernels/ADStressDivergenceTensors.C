@@ -36,6 +36,9 @@ ADStressDivergenceTensorsTempl<R2>::validParams()
   params.addParam<bool>("volumetric_locking_correction",
                         false,
                         "Set to false to turn off volumetric locking correction");
+  params.addParam<bool>("negative_stress_divergence",
+                        false,
+                        "Set to false to not to negate the stress divergence term");                        
   return params;
 }
 
@@ -52,7 +55,8 @@ ADStressDivergenceTensorsTempl<R2>::ADStressDivergenceTensorsTempl(
     _out_of_plane_strain_coupled(isCoupled("out_of_plane_strain")),
     _out_of_plane_strain(_out_of_plane_strain_coupled ? &adCoupledValue("out_of_plane_strain")
                                                       : nullptr),
-    _volumetric_locking_correction(getParam<bool>("volumetric_locking_correction"))
+    _volumetric_locking_correction(getParam<bool>("volumetric_locking_correction")),
+    _negative_stress_divergence(getParam<bool>("negative_stress_divergence"))
 {
   for (unsigned int i = 0; i < _ndisp; ++i)
     // the next line should be _disp_var[i] = coupled("displacements", i);
@@ -88,6 +92,8 @@ ADStressDivergenceTensorsTempl<R2>::computeQpResidual()
     const ADReal out_of_plane_thickness = std::exp((*_out_of_plane_strain)[_qp]);
     residual *= out_of_plane_thickness;
   }
+  if (_negative_stress_divergence) 
+    residual=-1*residual;
 
   return residual;
 }

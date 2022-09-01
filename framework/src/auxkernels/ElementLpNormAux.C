@@ -43,7 +43,11 @@ ElementLpNormAux::compute()
   for (_qp = 0; _qp < _qrule->n_points(); _qp++)
   {
     Real val = computeValue();
-    summed_value += _JxW[_qp] * _coord[_qp] * std::pow(std::abs(val), _p);
+    //summed_value += _JxW[_qp] * _coord[_qp] * std::pow(std::abs(val), _p);
+    summed_value +=
+    _JxW[_qp] * _coord[_qp] *
+    std::pow(val, _p); // ABDO: this takes into consideration the (sign) of val. this is helpful
+                           // in case we need to compute the elemental integral!
   }
 
   _var.setDofValue(std::pow(summed_value, 1. / _p), 0);

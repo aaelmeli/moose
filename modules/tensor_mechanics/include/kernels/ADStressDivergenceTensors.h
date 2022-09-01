@@ -55,6 +55,7 @@ protected:
 
   /// Flag for volumetric locking correction
   const bool _volumetric_locking_correction;
+  const bool _negative_stress_divergence;
 };
 
 typedef ADStressDivergenceTensorsTempl<RankTwoTensor> ADStressDivergenceTensors;
