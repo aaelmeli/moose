@@ -41,4 +41,5 @@ protected:
 
   /// normals at quadrature points
   const MooseArray<Point> & _normals;
+  const double _coefficient;
 };
