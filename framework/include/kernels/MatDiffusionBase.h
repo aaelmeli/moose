@@ -55,6 +55,7 @@ protected:
 
   /// Gradient of the concentration
   const VariableGradient & _grad_v;
+  const bool _negative_diffusion_kernel;
 };
 
 template <typename T>
@@ -78,6 +79,8 @@ MatDiffusionBase<T>::validParams()
                        "Coupled concentration variable for kernel to operate on; if this "
                        "is not specified, the kernel's nonlinear variable will be used as "
                        "usual");
+  params.addParam<bool>(
+      "negative_diffusion_kernel", false, "Set to false to not to negate the diffusion term");
   return params;
 }
 
@@ -92,7 +95,8 @@ MatDiffusionBase<T>::MatDiffusionBase(const InputParameters & parameters)
     _is_coupled(isCoupled("v")),
     _v_var(_is_coupled ? coupled("v") : (isCoupled("conc") ? coupled("conc") : _var.number())),
     _grad_v(_is_coupled ? coupledGradient("v")
-                        : (isCoupled("conc") ? coupledGradient("conc") : _grad_u))
+                        : (isCoupled("conc") ? coupledGradient("conc") : _grad_u)),
+    _negative_diffusion_kernel(getParam<bool>("negative_diffusion_kernel"))
 {
   // deprecated variable parameter conc
   if (isCoupled("conc"))
@@ -116,7 +120,10 @@ template <typename T>
 Real
 MatDiffusionBase<T>::computeQpResidual()
 {
-  return _D[_qp] * _grad_v[_qp] * _grad_test[_i][_qp];
+  Real sum=_D[_qp] * _grad_v[_qp] * _grad_test[_i][_qp];
+  if (_negative_diffusion_kernel)
+    sum=-1*sum;
+  return sum;
 }
 
 template <typename T>
@@ -126,7 +133,8 @@ MatDiffusionBase<T>::computeQpJacobian()
   Real sum = _phi[_j][_qp] * _dDdc[_qp] * _grad_v[_qp] * _grad_test[_i][_qp];
   if (!_is_coupled)
     sum += computeQpCJacobian();
-
+  if (_negative_diffusion_kernel)
+    sum=-1*sum;
   return sum;
 }
 
@@ -140,7 +148,8 @@ MatDiffusionBase<T>::computeQpOffDiagJacobian(unsigned int jvar)
   Real sum = (*_dDdarg[cvar])[_qp] * _phi[_j][_qp] * _grad_v[_qp] * _grad_test[_i][_qp];
   if (_v_var == jvar)
     sum += computeQpCJacobian();
-
+  if (_negative_diffusion_kernel)
+    sum = -1 * sum;
   return sum;
 }
 
