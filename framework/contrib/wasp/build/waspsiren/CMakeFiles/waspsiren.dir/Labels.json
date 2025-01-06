@@ -1,0 +1,44 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENInterpreter.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENInterpreter.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENLexer.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENLexer.lex"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENParser.bison"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENParser.hpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENResultSet.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENResultSet.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENLexer.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENParser.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"waspsirenLibs",
+			"waspLibs"
+		],
+		"name" : "waspsiren"
+	}
+}

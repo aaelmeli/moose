@@ -1,0 +1,1 @@
+z{InputAliases [STRIDE[2,3]]}

@@ -1,0 +1,47 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/DataAccessor.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteInterpreter.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteInterpreter.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteNodeView.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteNodeView.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteWorkflow.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/SubStringIndexer.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/DataAccessor.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/SubStringIndexer.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteWorkflow.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteNodeView.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"wasphaliteLibs",
+			"waspLibs"
+		],
+		"name" : "wasphalite"
+	}
+}

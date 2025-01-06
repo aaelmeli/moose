@@ -1,0 +1,14 @@
+Validation Error: Invalid Schema Rule: Bad ValType Option "BadType" at line:50 column:21 - Expected [ Int Real String RealOrQuestion IntOrYesOrNo IntOrAsterisk Fido ]
+line:3 column:5 - Validation Error: one value "-8.3" is not of type Int
+line:4 column:5 - Validation Error: two value "0.3" is not of type Int
+line:5 column:5 - Validation Error: three value "+8e-3" is not of type Int
+line:6 column:5 - Validation Error: four value "ast" is not of type Real
+line:7 column:5 - Validation Error: five value "StringHere" is not of type Real
+line:8 column:5 - Validation Error: six value "another_string_here" is not of type Real
+line:11 column:5 - Validation Error: nine value "ast" is not of type RealOrQuestion
+line:12 column:5 - Validation Error: ten value "test" is not of type RealOrQuestion
+line:13 column:5 - Validation Error: eleven value "y" is not of type IntOrYesOrNo
+line:14 column:5 - Validation Error: twelve value "N" is not of type IntOrYesOrNo
+line:15 column:5 - Validation Error: thirteen value "6.5" is not of type IntOrYesOrNo
+line:16 column:5 - Validation Error: fourteen value "No" is not of type IntOrAsterisk
+line:17 column:5 - Validation Error: fifteen value "que" is not of type IntOrAsterisk

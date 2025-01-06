@@ -1,0 +1,80 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Definition.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Format.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/FlexLexer.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Interpreter.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Interpreter.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Iterator.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/location.hh"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Object.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/StringPool.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/StringPool.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/TokenPool.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/TokenPool.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/TreeNodePool.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/TreeNodePool.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/utils.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/decl.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/wasp_bug.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/wasp_node.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Definition.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Interpreter.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/utils.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Object.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"waspcoreLibs",
+			"waspLibs"
+		],
+		"name" : "waspcore"
+	}
+}

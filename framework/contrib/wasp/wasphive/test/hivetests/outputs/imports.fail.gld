@@ -1,0 +1,9 @@
+line:6 column:23 - Validation Error: param_aa_01 value "black" is not one of the allowed values: [ "blue" "green" "indigo" "orange" "red" "violet" ... ]
+line:8 column:5 - Validation Error: object_01_02 has 0 "param_bb_03" occurrences - when there should be a minimum occurrence of 1
+line:8 column:5 - Validation Error: object_01_02 has 2 "param_bb_01" occurrences - when there should be a maximum occurrence of 1
+line:14 column:5 - Validation Error: /object_01/object_01_0x is not a valid piece of input
+line:24 column:23 - Validation Error: param_cc_01 value "-3" is less than the allowed minimum inclusive value of 0
+line:25 column:9 - Validation Error: /object_02/object_02_01/param_cc_0x is not a valid piece of input
+line:29 column:23 - Validation Error: param_dd_01 value "name_0x" does not exist in set: [ ../../../../object_01/object_01_02/param_bb_01
+        ../../../../object_01/object_01_02/param_bb_02
+        ../../../../object_01/object_01_02/param_bb_03 ]

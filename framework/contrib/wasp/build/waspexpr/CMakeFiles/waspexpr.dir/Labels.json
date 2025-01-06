@@ -1,0 +1,44 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/ExprContext.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/ExprLexer.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/ExprParser.hpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/ExprInterpreter.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/ExprInterpreter.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/Expr.lex"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/Expr.bison"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/ExprContext.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/ExprLexer.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspexpr/ExprParser.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"waspexprLibs",
+			"waspLibs"
+		],
+		"name" : "waspexpr"
+	}
+}

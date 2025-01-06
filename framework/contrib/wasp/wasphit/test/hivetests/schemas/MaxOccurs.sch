@@ -1,0 +1,34 @@
+test{
+
+    MaxOccurs=NoLimit
+    control{
+    }
+    bad_two_numbers{
+    }
+    bad_real{
+    }
+    bad_string{
+    }
+    valueone{
+        MaxOccurs=10
+    }
+    valuetwo{
+        MaxOccurs="../control"
+    }
+    value_bad_one{
+        inside{
+            MinOccurs="../../bad_two_numbers"
+        }
+    }
+    value_bad_two{
+        inside{
+            MinOccurs="../../bad_real"
+        }
+    }
+    value_bad_three{
+        inside{
+            MinOccurs="../../bad_string"
+        }
+    }
+
+}

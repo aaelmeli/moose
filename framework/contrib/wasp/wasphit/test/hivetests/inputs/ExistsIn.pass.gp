@@ -1,0 +1,46 @@
+
+[test]
+
+    defineone=one
+    defineone=two
+    defineone=three
+    defineone=four
+
+    definetwo=' england spain germany italy canada '
+    definetwo=-200
+    definetwo=300
+    definetwo=' 500 -600 '
+
+    definethree=science
+    definethree=math
+    definethree=' geography economics recess lunch '
+
+    useone=two
+    useone=germany
+    useone=' three recess lunch italy canada '
+
+    usetwo=' ford bmw red 1 4 math '
+    usetwo=3
+    usetwo=blue
+
+    usethree=england
+    usethree=italy
+    usethree=' 5 3 -2 canada 1 '
+    usethree=-4
+
+    usefour_abs=geography
+    usefour_abs=' hamburger 900 math hotdog four '
+    usefour_abs=three
+    usefour_abs=' 800 -800 '
+    usefour_abs=-900
+
+    usefive_abs=orange
+    usefive_abs=economics
+    usefive_abs=' indigo violet geography '
+    usefive_abs=science
+    usefive_abs=' 600 -600 300 -300 1200 1300 '
+    usefive_abs=200
+    usefive_abs=' -500 500 -200 -1850 '
+    usefive_abs=-1675
+
+[]

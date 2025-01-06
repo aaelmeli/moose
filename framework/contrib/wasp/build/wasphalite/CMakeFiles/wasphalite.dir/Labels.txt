@@ -1,0 +1,15 @@
+# Target labels
+ wasphaliteLibs
+ waspLibs
+# Source files and their labels
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/DataAccessor.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteInterpreter.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteInterpreter.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteNodeView.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteNodeView.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteWorkflow.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/SubStringIndexer.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/DataAccessor.cpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/SubStringIndexer.cpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteWorkflow.cpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphalite/HaliteNodeView.cpp

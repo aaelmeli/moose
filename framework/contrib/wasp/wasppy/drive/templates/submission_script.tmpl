@@ -1,0 +1,8 @@
+#repeat scheduler_header.tmpl using index=0,<size(scheduler.header.value)-1>
+
+cd <working_dir>
+
+<application.value>
+
+echo $? > <job_status_file>
+

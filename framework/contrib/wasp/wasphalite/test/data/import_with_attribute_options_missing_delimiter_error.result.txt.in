@@ -1,0 +1,2 @@
+***Error : a delimiter appears to be missing on line 5.
+***Error : on line 3 of '@CMAKE_CURRENT_SOURCE_DIR@/data/import_with_attribute_options_missing_delimiter_error.tmpl' - unable to process '@CMAKE_CURRENT_SOURCE_DIR@/data/attribute_options_missing_delimiter_error.tmpl'.

@@ -1,0 +1,35 @@
+application '/path/to/executable arg1 arg2 arg3'
+            input_file 'filename.i'
+
+extract_from 'filename_1.out'
+    find pattern 'search_pattern'
+        column 1 2 3 delimiter ',' as 'response_name_1'
+        column 4 5 6 delimiter ',' as 'response_name_2'
+        column 7 8 9 delimiter ',' as 'response_name_3'
+    find between 'pattern_start' 'pattern_end'
+        column 1 2 
+    find first_line 10
+    find last_line 5
+        column 3 4 delimiter '-' as 'response_name_4' 
+        column 5 6 2
+    find column 7 8 9 delimiter ':'
+    find column 16 19 
+    
+
+
+extract_from 'filename_2.out'
+    find pattern 'search_pattern'
+        column 1 2 3 delimiter ',' as 'response_name_5'
+        column 4 5 6 delimiter ',' as 'response_name_6'
+        column 7 8 9 delimiter ',' as 'response_name_7'
+    find between 'pattern_start' 'pattern_end'
+        column 1 2 
+    find first_line 10
+    find last_line 5
+        column 3 4 delimiter '-' as 'response_name_8' 
+        column 5 6 2
+    find column 7 8 9 delimiter ':'
+    find column 16 19 
+    
+    
+    

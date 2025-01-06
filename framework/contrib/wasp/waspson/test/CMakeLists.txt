@@ -1,0 +1,3 @@
+INCLUDE(GoogleTest)
+
+ADD_GOOGLE_TEST(tstSON.cpp NP 1)

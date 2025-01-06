@@ -1,0 +1,16 @@
+line:8 column:5 - Validation Error: valueone value "58.8" is greater than the allowed maximum inclusive value of 58.7
+line:9 column:16 - Validation Error: valuetwo value "65" is greater than the allowed maximum inclusive value of 58.7
+line:9 column:22 - Validation Error: valuetwo value "58.8" is greater than the allowed maximum inclusive value of 58.7
+line:9 column:30 - Validation Error: valuetwo value "88.7" is greater than the allowed maximum inclusive value of 58.7
+line:10 column:5 - Validation Error: valuethree value "23.9" is greater than the allowed maximum inclusive value of 23
+line:11 column:27 - Validation Error: valuefour value "23.1" is greater than the allowed maximum inclusive value of 23
+line:11 column:38 - Validation Error: valuefour value "2e2" is greater than the allowed maximum inclusive value of 23
+line:12 column:5 - Validation Error: valuefive value "19" is greater than the allowed maximum inclusive value of "15" from "../controlone"
+line:13 column:22 - Validation Error: valuesix value "18.2" is greater than the allowed maximum inclusive value of "15" from "../../controlone"
+line:13 column:30 - Validation Error: valuesix value "15.1" is greater than the allowed maximum inclusive value of "15" from "../../controlone"
+line:14 column:5 - Validation Error: valueseven value "-45.1" is greater than the allowed maximum inclusive value of "-45.3" from "../controltwo"
+line:15 column:24 - Validation Error: valueeight value "-41.9" is greater than the allowed maximum inclusive value of "-45.3" from "../../controltwo"
+line:15 column:43 - Validation Error: valueeight value "-4E-8" is greater than the allowed maximum inclusive value of "-45.3" from "../../controltwo"
+line:17 column:9 - Validation Error: inside maximum inclusive value checks against "../../bad_two_numbers" which returns more than one value
+line:20 column:9 - Validation Error: inside maximum inclusive value checks against "../../bad_string" which does not return a valid number
+line:22 column:5 - Validation Error: valueone value "a_string" is wrong value type for maximum inclusive value

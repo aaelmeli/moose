@@ -1,0 +1,65 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/Client.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/ClientImpl.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/Connection.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/IOStreamConnection.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/LSP.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/LSPInterpreter.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/Server.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/ServerImpl.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/SymbolIterator.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/ThreadConnection.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/WaspServer.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/WaspServer.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/LSP.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/ServerImpl.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/ClientImpl.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/SymbolIterator.cpp"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasplsp/LSPInterpreter.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"wasplspLibs",
+			"waspLibs"
+		],
+		"name" : "wasplsp"
+	}
+}

@@ -1,0 +1,7 @@
+line:2 column:1 - Validation Error: test has zero of: [ one=Red two three ] - exactly one must occur
+line:7 column:1 - Validation Error: test has more than one of: [ one=Red two three ] - exactly one must occur
+line:11 column:1 - Validation Error: test has more than one of: [ one=Red two three ] - exactly one must occur
+line:18 column:5 - Validation Error: five has zero of: [ "../four" "../two" ] - exactly one must occur
+line:22 column:5 - Validation Error: five has more than one of: [ "../four" "../two" ] - exactly one must occur
+line:29 column:5 - Validation Error: seven has zero of: [ "../six"=no "../four"=YES ] - exactly one must occur
+line:35 column:5 - Validation Error: seven has more than one of: [ "../six"=no "../four"=YES ] - exactly one must occur

@@ -1,0 +1,2 @@
+***Error : in '@CMAKE_CURRENT_SOURCE_DIR@/data/file_import_file_missing.tmpl' on line 4 - unable to open 'missing_file.tmpl' for import.
+***Error : on line 3 of '@CMAKE_CURRENT_SOURCE_DIR@/data/import_with_file_import_file_missing.tmpl' - unable to process '@CMAKE_CURRENT_SOURCE_DIR@/data/file_import_file_missing.tmpl'.

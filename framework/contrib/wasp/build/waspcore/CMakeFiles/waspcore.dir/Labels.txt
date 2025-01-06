@@ -1,0 +1,26 @@
+# Target labels
+ waspcoreLibs
+ waspLibs
+# Source files and their labels
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Definition.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Format.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/FlexLexer.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Interpreter.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Interpreter.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Iterator.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/location.hh
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Object.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/StringPool.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/StringPool.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/TokenPool.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/TokenPool.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/TreeNodePool.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/TreeNodePool.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/utils.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/decl.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/wasp_bug.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/wasp_node.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Definition.cpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Interpreter.cpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/utils.cpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspcore/Object.cpp

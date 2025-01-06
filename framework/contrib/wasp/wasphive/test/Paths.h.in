@@ -1,0 +1,9 @@
+#ifndef WASP_HIVE_TEST_PATHS_H
+#define WASP_HIVE_TEST_PATHS_H
+#include <string>
+
+std::string TEST_DIR_ROOT="@HIVE_TEST_DIR@/hivetests";
+std::string TEST_AUTODOC_ROOT="@HIVE_TEST_DIR@/autodoctests";
+
+#endif	/* WASP_HIVE_TEST_PATHS_H */
+

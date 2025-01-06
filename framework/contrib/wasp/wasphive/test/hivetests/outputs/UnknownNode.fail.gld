@@ -1,0 +1,4 @@
+line: 4 column: 5 - Validation Error: some_value is unknown
+line: 4 column: 16 - Validation Error: value '10' is unknown
+line: 5 column: 5 - Validation Error: some_value is unknown
+line: 5 column: 16 - Validation Error: value 'ted' is unknown

@@ -1,0 +1,32 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphive/AlphaNum.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphive/HIVE.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphive/HIVE.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphive/InputDefinition.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphive/InputDefinition.i.h"
+		},
+		{
+			"file" : "/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/wasphive/HIVE.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"wasphiveLibs",
+			"waspLibs"
+		],
+		"name" : "wasphive"
+	}
+}

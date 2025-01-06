@@ -1,0 +1,43 @@
+rule("Comment") {
+    foreground {
+        red = 0
+        green = 128
+        blue = 0
+    }
+    italic = true
+    pattern = "#.*"
+}
+rule("Double-quoted string") {
+    foreground {
+        red = 128
+        green = 0
+        blue = 0
+    }
+    pattern = '"[^"]*"'
+}
+rule("Single-quoted string") {
+    foreground {
+        red = 128
+        green = 0
+        blue = 0
+    }
+    pattern = "'[^']*'"
+}
+rule("keyword") {
+    bold = true
+    foreground {
+        red = 0
+        green = 0
+        blue = 0
+    }
+    pattern = "(between|first_line|last_line|delimiter|input_file|input_tmpl|extract_from|columns|find|pattern|application|scheduler|header|submit_path|polling_frequency)"
+}
+rule("Number") {
+    bold = true
+    foreground {
+        red = 128
+        green = 0
+        blue = 0
+    }
+    pattern = "\b[-+]?(\d+\.?\d*|\.\d+)([eE][-+]?\d+)?\b"
+}

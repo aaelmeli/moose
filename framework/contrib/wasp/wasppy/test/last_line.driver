@@ -1,0 +1,8 @@
+application 'python fake_driver_app.py'
+    input_file 'fake_app_input'
+    input_tmpl 'my_fake_app.tmpl'
+extract_from 'fake_driver_app.csv'
+    find last_line 1
+        column 2 delimiter ' ' as 'x1' 
+        column 3 delimiter ' ' as 'x2' 
+        column 4 delimiter ' ' as 'x3'

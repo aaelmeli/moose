@@ -1,0 +1,8 @@
+Validation Error: Invalid Schema Rule: Bad ChildCountEqual Option "" at line:8 column:43 - Expected [ IfExists EvenNone ]
+Validation Error: Invalid Schema Rule: Bad ChildCountEqual Option "BadFlag" at line:9 column:43 - Expected [ IfExists EvenNone ]
+line:2 column:1 - Validation Error: test does not have an equal number of existing: [ "one/value" 'two/value' "three/value" ]
+line:2 column:1 - Validation Error: test does not have an equal number of: [ "four/value" 'five/value' "six/value" ]
+line:28 column:9 - Validation Error: override does not have an equal number of: [ color=orange '../orange_rgb' ]
+line:33 column:9 - Validation Error: override does not have an equal number of: [ color=orange '../orange_rgb' ]
+line:38 column:9 - Validation Error: override does not have an equal number of existing: [ '../override/color'=yellow "../yellow_rgb" ]
+line:45 column:9 - Validation Error: override does not have an equal number of existing: [ '../override/color'=yellow "../yellow_rgb" ]

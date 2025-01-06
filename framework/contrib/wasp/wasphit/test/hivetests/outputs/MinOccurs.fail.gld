@@ -1,0 +1,7 @@
+line:2 column:1 - Validation Error: test has 9 "valueone" occurrences - when there should be a minimum occurrence of 10
+line:2 column:1 - Validation Error: test has 14 "valuetwo" occurrences - when there should be a minimum occurrence of "15" from "../control"
+line:33 column:1 - Validation Error: test has 0 "valueone" occurrences - when there should be a minimum occurrence of 10
+line:38 column:5 - Validation Error: valuethree has 0 "inside" occurrences - when there should be a minimum occurrence of -5
+line:40 column:5 - Validation Error: inside minimum occurrence checks against "../../bad_two_numbers" which returns more than one value
+line:42 column:5 - Validation Error: inside minimum occurrence checks against "../../bad_real" which does not return a valid number
+line:44 column:5 - Validation Error: inside minimum occurrence checks against "../../bad_string" which does not return a valid number

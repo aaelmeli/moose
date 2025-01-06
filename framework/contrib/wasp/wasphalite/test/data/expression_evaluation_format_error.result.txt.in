@@ -1,0 +1,2 @@
+***Error : unsupported format conversion type ' ', must be one of dfsge - format type conversion is missing.
+***Error : on line 5 failed to format result - double(3.141590) - as '%3.2 '.

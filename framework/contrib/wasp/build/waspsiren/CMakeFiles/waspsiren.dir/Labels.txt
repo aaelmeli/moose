@@ -1,0 +1,14 @@
+# Target labels
+ waspsirenLibs
+ waspLibs
+# Source files and their labels
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENInterpreter.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENInterpreter.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENLexer.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENLexer.lex
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENParser.bison
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENParser.hpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENResultSet.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENResultSet.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENLexer.cpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspsiren/SIRENParser.cpp

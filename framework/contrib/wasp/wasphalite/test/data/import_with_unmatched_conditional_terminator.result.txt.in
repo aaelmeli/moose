@@ -1,0 +1,2 @@
+***Error : line 4 is an unmatched conditional terminator - '#endif'. The matching #if, #ifdef, #ifndef, #elseif, or #else is missing.
+***Error : on line 3 of '@CMAKE_CURRENT_SOURCE_DIR@/data/import_with_unmatched_conditional_terminator.tmpl' - unable to process '@CMAKE_CURRENT_SOURCE_DIR@/data/unmatched_conditional_terminator.tmpl'.

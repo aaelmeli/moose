@@ -1,0 +1,66 @@
+Validation Error: Invalid Schema Rule: 50" start of range is greater than or equal to "25" end of range at line:92 column:32
+Validation Error: Invalid Schema Rule: Bad ExistsIn Option "BadFlag" at line:80 column:22 - Expected [ Abs BeforePeriod ]
+Validation Error: Invalid Schema Rule: Bad ExistsIn Path "../../../../defineone/value" at line:109 column:24
+Validation Error: Invalid Schema Rule: Enum Reference "BadReference" at line:103 column:24 not found in schema
+Validation Error: Invalid Schema Rule: Range does not have exactly two values at line:98 column:24
+Validation Error: Invalid Schema Rule: fifty range value not a valid number at line:86 column:35
+line:18 column:12 - Validation Error: useone value "seven" does not exist in set: [ ../../defineone/value
+        ../../definetwo/value
+        ../../definethree/value ]
+line:19 column:12 - Validation Error: useone value "japan" does not exist in set: [ ../../defineone/value
+        ../../definetwo/value
+        ../../definethree/value ]
+line:20 column:20 - Validation Error: useone value "spelling" does not exist in set: [ ../../defineone/value
+        ../../definetwo/value
+        ../../definethree/value ]
+line:20 column:29 - Validation Error: useone value "yellow" does not exist in set: [ ../../defineone/value
+        ../../definetwo/value
+        ../../definethree/value ]
+line:20 column:49 - Validation Error: useone value "2" does not exist in set: [ ../../defineone/value
+        ../../definetwo/value
+        ../../definethree/value ]
+line:22 column:19 - Validation Error: usetwo value "honda" does not exist in set: [ ../../defineone/value
+        ../../definetwo/value
+        ../../definethree/value ]
+line:22 column:29 - Validation Error: usetwo value "-1" does not exist in set: [ ../../defineone/value
+        ../../definetwo/value
+        ../../definethree/value ]
+line:23 column:12 - Validation Error: usetwo value "-3" does not exist in set: [ ../../defineone/value
+        ../../definetwo/value
+        ../../definethree/value ]
+line:24 column:12 - Validation Error: usetwo value "purple" does not exist in set: [ ../../defineone/value
+        ../../definetwo/value
+        ../../definethree/value ]
+line:26 column:14 - Validation Error: usethree value "red" does not exist in set: [ ../../definetwo/value ]
+line:27 column:14 - Validation Error: usethree value "three" does not exist in set: [ ../../definetwo/value ]
+line:28 column:20 - Validation Error: usethree value "2.3" does not exist in set: [ ../../definetwo/value ]
+line:28 column:25 - Validation Error: usethree value "blue" does not exist in set: [ ../../definetwo/value ]
+line:29 column:14 - Validation Error: usethree value "lunch" does not exist in set: [ ../../definetwo/value ]
+line:32 column:33 - Validation Error: usefour_reg value "spain" does not exist in set: [ ../../defineone/value
+        ../../definethree/value ]
+line:32 column:46 - Validation Error: usefour_reg value "fries" does not exist in set: [ ../../defineone/value
+        ../../definethree/value ]
+line:33 column:17 - Validation Error: usefour_reg value "orange" does not exist in set: [ ../../defineone/value
+        ../../definethree/value ]
+line:34 column:23 - Validation Error: usefour_reg value "-800" does not exist in set: [ ../../defineone/value
+        ../../definethree/value ]
+line:35 column:17 - Validation Error: usefour_reg value "-900" does not exist in set: [ ../../defineone/value
+        ../../definethree/value ]
+line:41 column:19 - Validation Error: usefive_reg value "600" does not exist in set: [ ../../definetwo/value
+        ../../definethree/value
+         ]
+line:41 column:23 - Validation Error: usefive_reg value "2" does not exist in set: [ ../../definetwo/value
+        ../../definethree/value
+         ]
+line:41 column:29 - Validation Error: usefive_reg value "five" does not exist in set: [ ../../definetwo/value
+        ../../definethree/value
+         ]
+line:42 column:17 - Validation Error: usefive_reg value "200" does not exist in set: [ ../../definetwo/value
+        ../../definethree/value
+         ]
+line:43 column:19 - Validation Error: usefive_reg value "-500" does not exist in set: [ ../../definetwo/value
+        ../../definethree/value
+         ]
+line:43 column:24 - Validation Error: usefive_reg value "-3" does not exist in set: [ ../../definetwo/value
+        ../../definethree/value
+         ]

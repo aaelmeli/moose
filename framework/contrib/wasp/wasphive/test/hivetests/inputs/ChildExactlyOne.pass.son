@@ -1,0 +1,30 @@
+
+test{
+    one=red
+    four=YES
+    six=no
+}
+test{
+    three=[ 2 3 4 ]
+    four=no
+    five=6
+}
+test{
+    two=[ 2 3 4 ]
+    five=6
+}
+test{
+    one=RED
+    four=No
+    five=6
+}
+test{
+    two=2
+    six=NO
+    seven=[ 11 12 ]
+}
+test{
+    three=[ 1 2 3 ]
+    four=yes
+    seven=14
+}

@@ -1,0 +1,54 @@
+test{
+
+    controlone{
+    }
+    controltwo{
+    }
+    bad_two_numbers{
+    }
+    bad_string{
+    }
+    valueone{
+        MinValInc=58.7
+    }
+    valuetwo{
+        value{
+            MinValInc=58.7
+        }
+    }
+    valuethree{
+        MinValInc=23
+    }
+    valuefour{
+        value{
+            MinValInc=23
+        }
+    }
+    valuefive{
+        MinValInc="../controlone"
+    }
+    valuesix{
+        value{
+            MinValInc="../../controlone"
+        }
+    }
+    valueseven{
+        MinValInc="../controltwo"
+    }
+    valueeight{
+        value{
+            MinValInc="../../controltwo"
+        }
+    }
+    value_bad_one{
+        inside{
+            MinValInc="../../bad_two_numbers"
+        }
+    }
+    value_bad_two{
+        inside{
+            MinValInc="../../bad_string"
+        }
+    }
+
+}

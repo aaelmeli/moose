@@ -1,0 +1,15 @@
+# Target labels
+ waspddiLibs
+ waspLibs
+# Source files and their labels
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDILexer.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDILexer.lex
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDINodeView.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDINodeView.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDIParser.bison
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDIParser.hpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDInterpreter.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDInterpreter.i.h
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDILexer.cpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDIParser.cpp
+/home/elmeabde/sawtooth1/projects/moose/framework/contrib/wasp/waspddi/DDINodeView.cpp

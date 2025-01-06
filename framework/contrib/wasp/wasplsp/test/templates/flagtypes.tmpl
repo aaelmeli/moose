@@ -1,0 +1,7 @@
+#if <InputType=="flagvalue">
+<InputName> = <InputValue>
+#elseif <InputType=="flagarray">
+<InputName> = [ <InputValue> <InputValue> <InputValue> ]
+#elseif <InputType=="quotedvalue">
+<InputName> = "<InputValue>"
+#endif

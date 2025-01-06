@@ -1,0 +1,2 @@
+***Error : unable to substitute expression on line 5 using 'obj_name' - the data object could not be found.
+***Error : on line 3 of '@CMAKE_CURRENT_SOURCE_DIR@/data/import_with_scoped_iterative_expression_evaluation_error.tmpl' - unable to process '@CMAKE_CURRENT_SOURCE_DIR@/data/scoped_iterative_expression_evaluation_error.tmpl'.

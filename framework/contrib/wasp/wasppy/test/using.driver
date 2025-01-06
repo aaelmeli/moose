@@ -1,0 +1,4 @@
+application 'python fake_driver_app.py'
+    input_file 'fake_app_input'
+    input_tmpl 'using.tmpl'
+extract_from 'fake_app_input' using 'python -c "with open(\"fake_app_input\") as f: print(f.read())"'

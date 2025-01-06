@@ -1,0 +1,31 @@
+
+object_01
+{
+    object_01_01
+    {
+        param_aa_01 = black
+    }
+    object_01_02
+    {
+        param_bb_01 = name_01
+        param_bb_02 = name_02
+        param_bb_01 = name_03
+    }
+    object_01_0x
+    {
+        param_0x_0x = value_0x
+    }
+}
+
+object_02
+{
+    object_02_01
+    {
+        param_cc_01 = -3
+        param_cc_0x = -3
+    }
+    object_02_02
+    {
+        param_dd_01 = name_0x
+    }
+}

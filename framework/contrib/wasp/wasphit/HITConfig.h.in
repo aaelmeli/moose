@@ -1,0 +1,6 @@
+#ifndef WASP_HIT_CONFIG_H
+#define WASP_HIT_CONFIG_H
+
+#cmakedefine01 DISABLE_HIT_TYPE_PROMOTION
+
+#endif	/* WASP_HIT_CONFIG_H */

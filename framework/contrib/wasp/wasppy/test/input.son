@@ -1,0 +1,158 @@
+=pytest
+
+object_one{
+
+    color = blue
+
+    foos{
+
+        foo ( foo_name1 ) {
+            numval      = 101
+            aaas{ 
+                a_num ( ac212 ) = 0.3
+                a_num ( ac231 ) = 0.3
+                a_num ( ac213 ) = 0.4
+            }
+        }
+    
+        foo ( foo_name2 ) {
+            numval      = 102
+            bbbs{ 
+                b_num ( ac210 ) = 0.7
+                b_num ( ac210 ) = 0.1
+                b_num ( ac213 ) = 0.2
+            }
+        }
+        foo ( foo_name3 ) {
+            numval      = 103
+            cccs{ 
+                 c_num ( ac213 ) = 0.3
+                 c_num ( ac216 ) = 0.2
+                 c_num ( ac211 ) = 0.5
+            }
+        }
+        foo ( foo_name4 ) {
+            numval      = 104
+            ddds{ 
+                 d_num ( ac230 ) = 0.0
+                 d_num ( ac229 ) = 0.0
+                 d_num ( ac225 ) = 0.0
+            }
+        }
+    
+        foo ( foo_name5 ) {
+            numval    = 105
+            eees( 3 ){
+                e_num ( ac209 ) = 0.4
+                e_num ( ac230 ) = 0.2
+                e_num ( ac231 ) = 0.4
+            }
+            eees( 4 ){
+                e_num ( ac229 ) = 0.5
+                e_num ( ac223 ) = 0.3
+                e_num ( ac223 ) = 0.2
+            }
+        }
+    
+        foo ( foo_name6 ) {
+            numval    = 106
+            fffs( 3 ){
+                f_num ( ac226 ) = 0.7
+                f_num ( ac228 ) = 0.2
+                f_num ( ac229 ) = 0.1
+            }
+            fffs( 4 ){
+                f_num ( ac221 ) = 0.3
+                f_num ( ac224 ) = 0.3
+                f_num ( ac224 ) = 0.4
+            }
+        }
+    
+    
+    
+    }
+    
+    bars{
+    
+        typeone ( typeone_name1 ) {
+            aaa   = x
+            bbb   = 0.1
+        }
+        typeone ( typeone_name2 ) {
+            aaa   = y
+            bbb   = 0.1
+        }
+        typeone ( typeone_name3 ) {
+            aaa   = z
+            bbb   = 0.1
+        }
+        typetwo ( typetwo_name1 ) {
+            x = 0.1
+            y = 0.1
+            z = 0.1
+        }
+        typetwo ( typetwo_name2 ) {
+            x = 0.1
+            y = 0.1
+            z = 0.1
+        }
+        typethree ( typethree_name1 ){
+            aaa = x
+            bbb = 0.1
+        }
+        typethree ( typethree_name2 ){
+            aaa = x
+            ccc = 0.1
+        }
+        typethree ( typethree_name3 ){
+            aaa = y
+            bbb = 0.1
+        }
+        typethree ( typethree_name4 ){
+            aaa = y
+            ccc = 0.1
+        }
+        typethree ( typethree_name5 ){
+            aaa = z
+            bbb = 0.1
+        }
+        typethree ( typethree_name6 ){
+            aaa = z
+            ccc = 0.1
+        }
+        typefour ( typefour_name1  ) {
+            bbb = 0.1
+        }
+    
+    }
+}
+
+object_two{
+
+    circle{
+       name  = john
+       phone = 5551224
+    }
+
+    square{
+
+        job   = doctor
+        sport = tennis
+
+        triangle{
+            sides = 3
+            type  = isosceles
+        }
+
+        pentagon{
+            rise = 76.3
+            run  = 19.3
+            foo_name_choices  = [ foo_name1 foo_name2 ]
+        }
+
+    }
+
+}
+
+
+end

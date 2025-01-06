@@ -1,0 +1,229 @@
+<a name="startofinput"></a>
+
+### Table Of Contents
+- [root](#root_anchor)
+    - [flagvalue_numbers](#flagvalue_numbers)
+        - [flagvalue_ints](#flagvalue_numbersflagvalue_ints)
+        - [flagvalue_reals](#flagvalue_numbersflagvalue_reals)
+    - [flagarray_numbers](#flagarray_numbers)
+        - [flagarray_ints](#flagarray_numbersflagarray_ints)
+        - [flagarray_reals](#flagarray_numbersflagarray_reals)
+    - [flagvalue_strings](#flagvalue_strings)
+    - [flagarray_strings](#flagarray_strings)
+    - [root_string](#root_string)
+    - [root_tagged_value](#root_tagged_value)
+    - [root_tagged_array](#root_tagged_array)
+- [Referenced Choice Lists](#refchoicelists)
+
+---
+
+### <a name="root_anchor"></a>[/](#root_anchor)
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+[flagvalue_numbers](#flagvalue_numbers)|SubObject|0 or more|||Description for flagvalue_numbers|
+[flagarray_numbers](#flagarray_numbers)|SubObject|[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1) or more|||Description for flagarray_numbers|
+[flagvalue_strings](#flagvalue_strings)|SubObject|1 or more|||Description for flagvalue_strings|
+[flagarray_strings](#flagarray_strings)|SubObject|0 to [flagvalue_int6](#flagvalue_numbersflagvalue_intsflagvalue_int6)|||Description for flagarray_strings|
+root_string<a name="root_string"></a>|KeyedValue|0 or more|String|__Choices__<br>choice21<br>choice22<br>choice23<br>choice24<br><br>__InputKeys__<br>[root_tagged_value id](#root_tagged_valueid)<br>|Description for root_string|
+[root_tagged_value](#root_tagged_value)|TaggedValue|5 or 6|||Description for root_tagged_value|
+[root_tagged_array](#root_tagged_array)|TaggedValue|5 to 7|||Description for root_tagged_array|
+
+---
+
+### <a name="flagvalue_numbers"></a>[/](#root_anchor)[flagvalue_numbers](#flagvalue_numbers)
+#### Description for flagvalue_numbers
+
+##### How Many: 0 or more
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+[flagvalue_ints](#flagvalue_numbersflagvalue_ints)|SubObject|0 or more|||Description for flagvalue_ints|
+[flagvalue_reals](#flagvalue_numbersflagvalue_reals)|SubObject|1 to [flagvalue_int6](#flagvalue_numbersflagvalue_intsflagvalue_int6)|||Description for flagvalue_reals|
+
+---
+
+### <a name="flagvalue_numbersflagvalue_ints"></a>[/](#root_anchor)[flagvalue_numbers](#flagvalue_numbers)/[flagvalue_ints](#flagvalue_numbersflagvalue_ints)
+#### Description for flagvalue_ints
+
+##### How Many: 0 or more
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+flagvalue_int1<a name="flagvalue_numbersflagvalue_intsflagvalue_int1"></a>|KeyedValue|0 or more|Integer|__Range__<br>\(-INF,+INF\)|Description for flagvalue_int1|
+flagvalue_int2<a name="flagvalue_numbersflagvalue_intsflagvalue_int2"></a>|KeyedValue|1 to 5|Integer|__Range__<br>\(-INF,+INF\)<br><br>__Choices__<br>44<br>55<br>66<br>77<br>REF:[ReferencedEnumsDigit1](#ref-referencedenumsdigit1)<br>|Description for flagvalue_int2|
+flagvalue_int3<a name="flagvalue_numbersflagvalue_intsflagvalue_int3"></a>|KeyedValue|0 to 10|Integer|__Range__<br>\[0,10\]|Description for flagvalue_int3|
+flagvalue_int4<a name="flagvalue_numbersflagvalue_intsflagvalue_int4"></a>|KeyedValue|1 or more|Integer|__Range__<br>\(0,10\)||
+flagvalue_int5<a name="flagvalue_numbersflagvalue_intsflagvalue_int5"></a>|KeyedValue|[flagvalue_int4](#flagvalue_numbersflagvalue_intsflagvalue_int4) or more|Integer|__Range__<br>\[[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1),[flagvalue_int2](#flagvalue_numbersflagvalue_intsflagvalue_int2)\)|Description for flagvalue_int5|
+flagvalue_int6<a name="flagvalue_numbersflagvalue_intsflagvalue_int6"></a>|KeyedValue|[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1) to [flagvalue_int2](#flagvalue_numbersflagvalue_intsflagvalue_int2)|Integer|__Range__<br>\([flagvalue_int3](#flagvalue_numbersflagvalue_intsflagvalue_int3),[flagvalue_int4](#flagvalue_numbersflagvalue_intsflagvalue_int4)\]|Description for flagvalue_int6|
+
+---
+
+### <a name="flagvalue_numbersflagvalue_reals"></a>[/](#root_anchor)[flagvalue_numbers](#flagvalue_numbers)/[flagvalue_reals](#flagvalue_numbersflagvalue_reals)
+#### Description for flagvalue_reals
+
+##### How Many: 1 to [flagvalue_int6](#flagvalue_numbersflagvalue_intsflagvalue_int6)
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+flagvalue_real1<a name="flagvalue_numbersflagvalue_realsflagvalue_real1"></a>|KeyedValue|0 or more|Real|__Range__<br>\(-INF,+INF\)|Description for flagvalue_real1|
+flagvalue_real2<a name="flagvalue_numbersflagvalue_realsflagvalue_real2"></a>|KeyedValue|1|Real|__Range__<br>\(-INF,+INF\)<br><br>__Choices__<br>4.4<br>5.5<br>6.6<br>7.7<br>REF:[ReferencedEnumsFloat1](#ref-referencedenumsfloat1)<br>100.1<br>200.2<br>REF:[ReferencedEnumsFloat2](#ref-referencedenumsfloat2)<br><br>__InputKeys__<br>[flagvalue_reals flagvalue_real3](#flagvalue_numbersflagvalue_realsflagvalue_real3)<br>[flagarray_reals flagarray_real4](#flagarray_numbersflagarray_realsflagarray_real4)<br>|Description for flagvalue_real2|
+flagvalue_real3<a name="flagvalue_numbersflagvalue_realsflagvalue_real3"></a>|KeyedValue|10|Real|__Range__<br>\[0.0,10.0\]|Description for flagvalue_real3|
+flagvalue_real4<a name="flagvalue_numbersflagvalue_realsflagvalue_real4"></a>|KeyedValue|1 or more|Real|__Range__<br>\(0.0,10.0\)||
+flagvalue_real5<a name="flagvalue_numbersflagvalue_realsflagvalue_real5"></a>|KeyedValue|[flagvalue_real4](#flagvalue_numbersflagvalue_realsflagvalue_real4) or more|Real|__Range__<br>\[[flagvalue_real1](#flagvalue_numbersflagvalue_realsflagvalue_real1),[flagvalue_real2](#flagvalue_numbersflagvalue_realsflagvalue_real2)\)|Description for flagvalue_real5|
+flagvalue_real6<a name="flagvalue_numbersflagvalue_realsflagvalue_real6"></a>|KeyedValue|[flagvalue_real1](#flagvalue_numbersflagvalue_realsflagvalue_real1)|Real|__Range__<br>\([flagvalue_real3](#flagvalue_numbersflagvalue_realsflagvalue_real3),[flagvalue_real4](#flagvalue_numbersflagvalue_realsflagvalue_real4)\]|Description for flagvalue_real6|
+
+---
+
+### <a name="flagarray_numbers"></a>[/](#root_anchor)[flagarray_numbers](#flagarray_numbers)
+#### Description for flagarray_numbers
+
+##### How Many: [flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1) or more
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+[flagarray_ints](#flagarray_numbersflagarray_ints)|SubObject|0 to 10|||Description for flagarray_ints|
+[flagarray_reals](#flagarray_numbersflagarray_reals)|SubObject|[flagvalue_int5](#flagvalue_numbersflagvalue_intsflagvalue_int5) to [flagvalue_int6](#flagvalue_numbersflagvalue_intsflagvalue_int6)|||Description for flagarray_reals|
+
+---
+
+### <a name="flagarray_numbersflagarray_ints"></a>[/](#root_anchor)[flagarray_numbers](#flagarray_numbers)/[flagarray_ints](#flagarray_numbersflagarray_ints)
+#### Description for flagarray_ints
+
+##### How Many: 0 to 10
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+flagarray_int1<a name="flagarray_numbersflagarray_intsflagarray_int1"></a>|Array of Size<br>1 or more|0 or more|Integer|__Range__<br>\(-INF,+INF\)|Description for flagarray_int1|
+flagarray_int2<a name="flagarray_numbersflagarray_intsflagarray_int2"></a>|Array of Size<br>5 to 8|1|Integer|__Range__<br>\[-10,10\)<br><br>__Choices__<br>44<br>55<br>66<br>77<br>REF:[ReferencedEnumsDigit1](#ref-referencedenumsdigit1)<br>100<br>200<br>REF:[ReferencedEnumsDigit2](#ref-referencedenumsdigit2)<br><br>__InputKeys__<br>[flagarray_ints flagarray_int3](#flagarray_numbersflagarray_intsflagarray_int3)<br>[flagarray_ints flagarray_int4](#flagarray_numbersflagarray_intsflagarray_int4)<br>||
+flagarray_int3<a name="flagarray_numbersflagarray_intsflagarray_int3"></a>|Array of Size<br>[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1)<br>Increasing Values|[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1)|Integer|__Range__<br>\[100,[flagvalue_int4](#flagvalue_numbersflagvalue_intsflagvalue_int4)\)|Description for flagarray_int3|
+flagarray_int4<a name="flagarray_numbersflagarray_intsflagarray_int4"></a>|Array of Size<br>[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1) to [flagvalue_int2](#flagvalue_numbersflagvalue_intsflagvalue_int2)<br>Decreasing Values|[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1) to [flagvalue_int2](#flagvalue_numbersflagvalue_intsflagvalue_int2)|Integer|__Range__<br>\([flagvalue_int4](#flagvalue_numbersflagvalue_intsflagvalue_int4),[flagvalue_int4](#flagvalue_numbersflagvalue_intsflagvalue_int4)\]|Description for flagarray_int4|
+
+---
+
+### <a name="flagarray_numbersflagarray_reals"></a>[/](#root_anchor)[flagarray_numbers](#flagarray_numbers)/[flagarray_reals](#flagarray_numbersflagarray_reals)
+#### Description for flagarray_reals
+
+##### How Many: [flagvalue_int5](#flagvalue_numbersflagvalue_intsflagvalue_int5) to [flagvalue_int6](#flagvalue_numbersflagvalue_intsflagvalue_int6)
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+flagarray_real1<a name="flagarray_numbersflagarray_realsflagarray_real1"></a>|Array of Size<br>1 or more|0 or more|Integer|__Range__<br>\(-INF,+INF\)|Description for flagarray_real1|
+flagarray_real2<a name="flagarray_numbersflagarray_realsflagarray_real2"></a>|Array of Size<br>5 to 8|1|Integer|__Range__<br>\(-INF,500\]<br><br>__InputKeys__<br>[flagarray_reals flagarray_real3](#flagarray_numbersflagarray_realsflagarray_real3)<br>[flagarray_reals flagarray_real4](#flagarray_numbersflagarray_realsflagarray_real4)<br>|Description for flagarray_real2|
+flagarray_real3<a name="flagarray_numbersflagarray_realsflagarray_real3"></a>|Array of Size<br>[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1)<br>Increasing Values|[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1)|Integer|__Range__<br>\[100,[flagvalue_real4](#flagvalue_numbersflagvalue_realsflagvalue_real4)\)||
+flagarray_real4<a name="flagarray_numbersflagarray_realsflagarray_real4"></a>|Array of Size<br>[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1) to [flagvalue_int2](#flagvalue_numbersflagvalue_intsflagvalue_int2)<br>Decreasing Values|[flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1) to [flagvalue_int2](#flagvalue_numbersflagvalue_intsflagvalue_int2)|Integer|__Range__<br>\([flagvalue_real4](#flagvalue_numbersflagvalue_realsflagvalue_real4),[flagvalue_real4](#flagvalue_numbersflagvalue_realsflagvalue_real4)\]|Description for flagarray_real4|
+
+---
+
+### <a name="flagvalue_strings"></a>[/](#root_anchor)[flagvalue_strings](#flagvalue_strings)
+#### Description for flagvalue_strings
+
+##### How Many: 1 or more
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+flagvalue_string1<a name="flagvalue_stringsflagvalue_string1"></a>|KeyedValue|0 or more|String||Description for flagvalue_string1|
+flagvalue_string2<a name="flagvalue_stringsflagvalue_string2"></a>|KeyedValue|10 to [flagarray_string1](#flagarray_stringsflagarray_string1)|String|__Choices__<br>thirty<br>fourty<br>fifty<br>sixty<br>REF:[ReferencedEnumsNumtxt](#ref-referencedenumsnumtxt)<br>regextra1<br>regextra2<br>REF:[ReferencedEnumsColors](#ref-referencedenumscolors)<br>REF:[ReferencedEnumsShapes](#ref-referencedenumsshapes)<br><br>__InputKeys__<br>[flagarray_strings flagarray_string1](#flagarray_stringsflagarray_string1)<br>|Description for flagvalue_string2|
+flagvalue_string3<a name="flagvalue_stringsflagvalue_string3"></a>|KeyedValue|0 to [flagvalue_int4](#flagvalue_numbersflagvalue_intsflagvalue_int4)|String|__Choices__<br>choice01<br>choice02<br>choice03<br>choice04<br>|Description for flagvalue_string3|
+flagvalue_string4<a name="flagvalue_stringsflagvalue_string4"></a>|KeyedValue|1 or more|String|__Choices__<br>choice11<br>choice12<br>choice13<br>choice14<br>none<br>all<br><br>__InputKeys__<br>[flagvalue_ints flagvalue_int4](#flagvalue_numbersflagvalue_intsflagvalue_int4)<br>||
+flagvalue_string5<a name="flagvalue_stringsflagvalue_string5"></a>|KeyedValue|5 or 6|String|__Choices__<br>choice21<br>choice22<br>choice23<br>choice24<br><br>__InputKeys__<br>[flagvalue_strings flagvalue_string1](#flagvalue_stringsflagvalue_string1)<br>[flagvalue_strings flagvalue_string2](#flagvalue_stringsflagvalue_string2)<br>[flagvalue_ints flagvalue_int3](#flagvalue_numbersflagvalue_intsflagvalue_int3)<br>[flagarray_strings flagarray_string4](#flagarray_stringsflagarray_string4)<br>[root root_string](#root_string)<br>|Description for flagvalue_string5|
+
+---
+
+### <a name="flagarray_strings"></a>[/](#root_anchor)[flagarray_strings](#flagarray_strings)
+#### Description for flagarray_strings
+
+##### How Many: 0 to [flagvalue_int6](#flagvalue_numbersflagvalue_intsflagvalue_int6)
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+flagarray_string1<a name="flagarray_stringsflagarray_string1"></a>|Array of Size<br>2|0 or more|String||Description for flagarray_string1|
+flagarray_string2<a name="flagarray_stringsflagarray_string2"></a>|Array of Size<br>1 or more|10 to [flagarray_string1](#flagarray_stringsflagarray_string1)|String|__Choices__<br>thirty<br>fourty<br>fifty<br>sixty<br>REF:[ReferencedEnumsNumtxt](#ref-referencedenumsnumtxt)<br>regextra1<br>regextra2<br>REF:[ReferencedEnumsColors](#ref-referencedenumscolors)<br>REF:[ReferencedEnumsShapes](#ref-referencedenumsshapes)<br><br>__InputKeys__<br>[flagarray_strings flagarray_string1](#flagarray_stringsflagarray_string1)<br>|Description for flagarray_string2|
+flagarray_string3<a name="flagarray_stringsflagarray_string3"></a>|Array of Size<br>10 or 11|0 to [flagvalue_int4](#flagvalue_numbersflagvalue_intsflagvalue_int4)|String|__Choices__<br>choice01<br>choice02<br>choice03<br>choice04<br>|Description for flagarray_string3|
+flagarray_string4<a name="flagarray_stringsflagarray_string4"></a>|Array of Size<br>1 to [flagvalue_int2](#flagvalue_numbersflagvalue_intsflagvalue_int2)|1 or more|String|__Choices__<br>choice11<br>choice12<br>choice13<br>choice14<br>none<br>all<br><br>__InputKeys__<br>[flagvalue_ints flagvalue_int4](#flagvalue_numbersflagvalue_intsflagvalue_int4)<br>||
+flagarray_string5<a name="flagarray_stringsflagarray_string5"></a>|Array of Size<br>9 to 19|5 to [flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1)|String|__Choices__<br>choice21<br>choice22<br>choice23<br>choice24<br><br>__InputKeys__<br>[flagvalue_strings flagvalue_string1](#flagvalue_stringsflagvalue_string1)<br>[flagarray_strings flagarray_string2](#flagarray_stringsflagarray_string2)<br>[flagvalue_ints flagvalue_int3](#flagvalue_numbersflagvalue_intsflagvalue_int3)<br>[flagarray_strings flagarray_string4](#flagarray_stringsflagarray_string4)<br>[root_tagged_value value](#root_tagged_valuevalue)<br>|Description for flagarray_string5|
+
+---
+
+### <a name="root_tagged_value"></a>[/](#root_anchor)[root_tagged_value](#root_tagged_value)
+#### Description for root_tagged_value
+
+##### How Many: 5 or 6
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+id<a name="root_tagged_valueid"></a>|Tag|1|Integer|__Range__<br>\(-INF,+INF\)<br><br>__InputKeys__<br>[flagvalue_ints flagvalue_int1](#flagvalue_numbersflagvalue_intsflagvalue_int1)<br>[flagarray_ints flagarray_int1](#flagarray_numbersflagarray_intsflagarray_int1)<br>[flagarray_ints flagarray_int2](#flagarray_numbersflagarray_intsflagarray_int2)<br>||
+value<a name="root_tagged_valuevalue"></a>|Value|1|String|__Choices__<br>yes<br>no<br>REF:[ReferencedEnumsNumtxt](#ref-referencedenumsnumtxt)<br><br>__InputKeys__<br>[root root_string](#root_string)<br>||
+
+---
+
+### <a name="root_tagged_array"></a>[/](#root_anchor)[root_tagged_array](#root_tagged_array)
+#### Description for root_tagged_array
+
+##### How Many: 5 to 7
+
+Name|Type|HowMany|ValueType|Restrictions|Description
+:---:|:---:|:---:|:---:|:---:|:---:|
+id<a name="root_tagged_arrayid"></a>|Tag|1|String|__Choices__<br>a<br>b<br>c<br>d<br>e<br>f<br>REF:[ReferencedEnumsShapes](#ref-referencedenumsshapes)<br>||
+value<a name="root_tagged_arrayvalue"></a>|Value|[id](#root_tagged_valueid) to 15|Real|__Range__<br>\(-18.8,18.8\)||
+
+---
+
+[Start of Input](#startofinput)
+
+## Referenced Choice Lists<a name="refchoicelists"></a>
+
+### <a name="ref-referencedenumscolors"></a>ReferencedEnumsColors
+red orange yellow green blue indigo violet 
+
+[Start of Input](#startofinput)
+
+---
+
+
+### <a name="ref-referencedenumsdigit1"></a>ReferencedEnumsDigit1
+0 1 2 3 4 
+
+[Start of Input](#startofinput)
+
+---
+
+
+### <a name="ref-referencedenumsdigit2"></a>ReferencedEnumsDigit2
+7 8 9 10 11 
+
+[Start of Input](#startofinput)
+
+---
+
+
+### <a name="ref-referencedenumsfloat1"></a>ReferencedEnumsFloat1
+1.1 2.2 3.3 
+
+[Start of Input](#startofinput)
+
+---
+
+
+### <a name="ref-referencedenumsfloat2"></a>ReferencedEnumsFloat2
+6.6 7.7 8.8 
+
+[Start of Input](#startofinput)
+
+---
+
+
+### <a name="ref-referencedenumsnumtxt"></a>ReferencedEnumsNumtxt
+zero one two three four five six seven eight nine 
+
+[Start of Input](#startofinput)
+
+---
+
+
+### <a name="ref-referencedenumsshapes"></a>ReferencedEnumsShapes
+square circle triangle pentagon hexagon 
+
+[Start of Input](#startofinput)
+
+---
+

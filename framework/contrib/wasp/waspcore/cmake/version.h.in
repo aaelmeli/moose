@@ -1,0 +1,8 @@
+#ifndef WASP_VERSION_H
+#define WASP_VERSION_H
+namespace wasp_version_info{
+    std::string name         = "${${PROJECT_NAME}_NAME}";
+    std::string version      = "${${PROJECT_NAME}_VERSION}";
+    std::string full_version = "${${PROJECT_NAME}_FULL_VERSION}";
+}
+#endif

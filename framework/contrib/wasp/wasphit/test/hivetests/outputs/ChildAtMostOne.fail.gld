@@ -1,0 +1,4 @@
+line:2 column:1 - Validation Error: test has more than one of: [ one two three ] - at most one must occur
+line:6 column:1 - Validation Error: test has more than one of: [ one two three ] - at most one must occur
+line:11 column:1 - Validation Error: test has more than one of: [ one two three ] - at most one must occur
+line:18 column:5 - Validation Error: five has more than one of: [ "../four" "../two" ] - at most one must occur

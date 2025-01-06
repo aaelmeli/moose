@@ -1,0 +1,49 @@
+
+test{
+    one=Red
+    four=no
+    six=no
+}
+test{
+    four=no
+}
+test{
+    two=3
+}
+test{
+    five=5
+}
+test{
+    seven=7
+}
+test{
+    three=[ 2 3 4 ]
+    four=NO
+    five=6
+}
+test{
+    two=[ 2 3 4 ]
+    five=6
+}
+test{
+    five=6
+    four=NO
+}
+test{
+    one=red
+    seven=5
+}
+test{
+    one=RED
+    six=No
+    seven=5
+}
+test{
+    one=Red
+    five=5
+}
+test{
+    two=2
+    six=NO
+    seven=[ 11 12 ]
+}

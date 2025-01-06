@@ -1,0 +1,6 @@
+Validation Error: Invalid Schema Rule: Bad DecreaseOver Option "Neither" at line:9 column:39 - Expected [ Mono Strict ]
+line:2 column:1 - Validation Error: test children "inside" are not strictly decreasing at line:11 column:9
+line:18 column:5 - Validation Error: array children "value" are not monotonically decreasing at line:18 column:18
+line:18 column:5 - Validation Error: array children "value" are not monotonically decreasing at line:18 column:35
+line:19 column:31 - Validation Error: array value "something" is wrong value type for decreasing
+line:20 column:33 - Validation Error: another_array value "something" is wrong value type for decreasing

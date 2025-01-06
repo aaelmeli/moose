@@ -1,0 +1,10 @@
+commentDelimiter = "#"
+enabled = true
+extensions = [drive driver]
+highlighter = "driver.wbh"
+maxDepth = 3
+name = Driver
+parser = ddi
+schema = "driver.sch"
+templates = "templates"
+validator = wasp

@@ -1,0 +1,5 @@
+Validation Error: Invalid Schema Rule: "BadRuleName" line:23 column:13
+line:9 column:5 - Validation Error: /test/should_not_exist_one is not a valid piece of input
+line:10 column:5 - Validation Error: /test/should_not_exist_two is not a valid piece of input
+line:11 column:5 - Validation Error: /test/should_not_exist_three is not a valid piece of input
+line:12 column:5 - Validation Error: /test/should_not_exist_four is not a valid piece of input

@@ -1,0 +1,3 @@
+INCLUDE(GoogleTest)
+
+ADD_GOOGLE_TEST(tstEDDI.cpp NP 1)

@@ -1,0 +1,2 @@
+***Error : value (undefined) at line 5 and column 24 - is not a known variable.
+***Error : on line 3 of '@CMAKE_CURRENT_SOURCE_DIR@/data/import_with_undefined_attribute.tmpl' - unable to process '@CMAKE_CURRENT_SOURCE_DIR@/data/undefined_attribute.tmpl'.

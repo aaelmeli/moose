@@ -1,0 +1,6 @@
+#ifndef WASP_HIT_CONFIG_H
+#define WASP_HIT_CONFIG_H
+
+#define DISABLE_HIT_TYPE_PROMOTION 1
+
+#endif	/* WASP_HIT_CONFIG_H */

@@ -1,0 +1,19 @@
+line:8 column:5 - Validation Error: valueone value "58.7" is less than or equal to the allowed minimum exclusive value of 58.7
+line:9 column:16 - Validation Error: valuetwo value "65E-1" is less than or equal to the allowed minimum exclusive value of 58.7
+line:9 column:25 - Validation Error: valuetwo value "7" is less than or equal to the allowed minimum exclusive value of 58.7
+line:9 column:30 - Validation Error: valuetwo value "58.7" is less than or equal to the allowed minimum exclusive value of 58.7
+line:10 column:5 - Validation Error: valuethree value "23" is less than or equal to the allowed minimum exclusive value of 23
+line:11 column:17 - Validation Error: valuefour value "383E-2" is less than or equal to the allowed minimum exclusive value of 23
+line:11 column:24 - Validation Error: valuefour value "3.3" is less than or equal to the allowed minimum exclusive value of 23
+line:11 column:28 - Validation Error: valuefour value "23" is less than or equal to the allowed minimum exclusive value of 23
+line:12 column:5 - Validation Error: valuefive value "15" is less than or equal to the allowed minimum exclusive value of "15" from "../controlone"
+line:13 column:16 - Validation Error: valuesix value "-21" is less than or equal to the allowed minimum exclusive value of "15" from "../../controlone"
+line:13 column:23 - Validation Error: valuesix value "2.3E-4" is less than or equal to the allowed minimum exclusive value of "15" from "../../controlone"
+line:13 column:33 - Validation Error: valuesix value "15" is less than or equal to the allowed minimum exclusive value of "15" from "../../controlone"
+line:14 column:5 - Validation Error: valueseven value "-45.3" is less than or equal to the allowed minimum exclusive value of "-453E-1" from "../controltwo"
+line:15 column:18 - Validation Error: valueeight value "-132.4" is less than or equal to the allowed minimum exclusive value of "-453E-1" from "../../controltwo"
+line:15 column:25 - Validation Error: valueeight value "-3.19E5" is less than or equal to the allowed minimum exclusive value of "-453E-1" from "../../controltwo"
+line:15 column:39 - Validation Error: valueeight value "-45.3" is less than or equal to the allowed minimum exclusive value of "-453E-1" from "../../controltwo"
+line:18 column:9 - Validation Error: inside minimum exclusive value checks against "../../bad_two_numbers" which returns more than one value
+line:21 column:9 - Validation Error: inside minimum exclusive value checks against "../../bad_string" which does not return a valid number
+line:23 column:5 - Validation Error: valueone value "a_string" is wrong value type for minimum exclusive value

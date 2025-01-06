@@ -1,0 +1,38 @@
+test{
+
+    control{
+    }
+    bad_two_numbers{
+    }
+    bad_real{
+    }
+    bad_string{
+    }
+    valueone{
+        MinOccurs=10
+    }
+    valuetwo{
+        MinOccurs="../control"
+    }
+    valuethree{
+        inside{
+            MinOccurs=-5
+        }
+    }
+    value_bad_one{
+        inside{
+            MinOccurs="../../bad_two_numbers"
+        }
+    }
+    value_bad_two{
+        inside{
+            MinOccurs="../../bad_real"
+        }
+    }
+    value_bad_three{
+        inside{
+            MinOccurs="../../bad_string"
+        }
+    }
+
+}

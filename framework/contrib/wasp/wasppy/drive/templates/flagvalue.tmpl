@@ -1,0 +1,14 @@
+#if <InputType=="quoted">
+<InputName> = "<InputValue>"
+#elseif <InputType=="patternarrayupload">
+<InputName> = [   ] % eg: ["?.xml", "*.xml", "./[0-9].xml", "../dir1/*.xml", "*/*.xml"]
+#elseif <InputType=="patternarraydownload">
+<InputName> = [ "*" ] % eg: ["?.xml", "*.xml", "./[0-9].xml", "../dir1/*.xml", "*/*.xml"]
+#elseif <InputType=="header">
+    <InputName> = [
+        "#PBS -l walltime=42:00:00"
+        "module load my_library"
+    ]
+#else
+<InputName> = <InputValue>
+#endif

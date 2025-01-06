@@ -1,0 +1,6 @@
+Validation Error: Invalid Schema Rule: Enum Reference "BadReference" at line:19 column:20 not found in schema
+line:3 column:5 - Validation Error: one value "red" is not one of the allowed values: [ "maybe" "no" "yes" ]
+line:4 column:5 - Validation Error: two value "green" is not one of the allowed values: [ "maybe" "no" "yes" ]
+line:5 column:5 - Validation Error: three value "yes" is not one of the allowed values: [ ... "green" "indigo" "orange" "red" "violet" "yellow" ]
+line:6 column:5 - Validation Error: four value "-4" is not one of the allowed values: [ "1" "2" "3" "4" "5" ]
+line:7 column:5 - Validation Error: five value "7" is not one of the allowed values: [ ... "3" "4" "5" "blue" "green" "indigo" ... ]
